@@ -1,7 +1,7 @@
 'use strict';
 
 angular.module('fenixApp')
-    .controller('Agencia1Ctrl', function ($scope, $log, $modal) {
+    .controller('Agencia2Ctrl', function ($scope, $log, $modal) {
 
         $scope.showDate = function () {
             $scope.date = 0;
@@ -10,41 +10,45 @@ angular.module('fenixApp')
         };
 
         $scope.agencia = {
-            unidades: [{
+            agentes: [{
                 id: 1,
+                nombre: "00001",
                 estado: "No Disponible",
-                gps: "Not Active",
+                nombre_unidad: "Lorem ipsun",
                 status: "not-active",
-                alias: "Lorem ipsum dolor",
-                agencia: "Lorem ipsum dolor",
-                sector: "Lorem ipsum dolor",
+                alias: "Lorem ipsum dolor.",
+                agencia: "Lorem ipsum dolor.",
+                sector: "Lorem ipsum dolor.",
                 mision: "Not Active"
             }, {
                 id: 2,
+                nombre: "00002",
                 estado: "No Disponible",
-                gps: "Not Status",
+                nombre_unidad: "Lorem ipsun",
                 status: "not-status",
-                alias: "Lorem ipsum dolor",
-                agencia: "Lorem ipsum dolor",
-                sector: "Lorem ipsum dolor",
+                alias: "Lorem ipsum dolor.",
+                agencia: "Lorem ipsum dolor.",
+                sector: "Lorem ipsum dolor.",
                 mision: "Not Status"
             }, {
-               id: 3,
+                id: 3,
+                nombre: "00003",
                 estado: "No Disponible",
-                gps: "Active",
+                nombre_unidad: "Lorem ipsun",
                 status: "active",
-                alias: "Lorem ipsum dolor",
-                agencia: "Lorem ipsum dolor",
-                sector: "Lorem ipsum dolor",
+                alias: "Lorem ipsum dolor.",
+                agencia: "Lorem ipsum dolor.",
+                sector: "Lorem ipsum dolor.",
                 mision: "Active"
             }, {
                 id: 4,
+                nombre: "00004",
                 estado: "No Disponible",
-                gps: "Not Active",
+                nombre_unidad: "Lorem ipsun",
                 status: "not-active",
-                alias: "Lorem ipsum dolor",
-                agencia: "Lorem ipsum dolor",
-                sector: "Lorem ipsum dolor",
+                alias: "Lorem ipsum dolor.",
+                agencia: "Lorem ipsum dolor.",
+                sector: "Lorem ipsum dolor.",
                 mision: "Not Active"
             }]
         }
