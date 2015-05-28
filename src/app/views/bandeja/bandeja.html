@@ -2,21 +2,21 @@
 <section class="content">
     <!-- MAILBOX BEGIN -->
     <div class="col-xs-3">
-        <div class="pull-left">
-            <div class="id_p">
+    	<div class="pull-left">
+    		<div class="id_p">
                <p><i class="glyphicon glyphicon-calendar"></i><span><span></span><b>Fecha y Hora Actual: </b>{{showDate() | date : 'short'}} </span></p>
             </div>
-        </div>
+    	</div>
     </div>
     <div class="col-xs-9">
-        <div class="pull-right">
-            <div class="btn-group">
+    	<div class="pull-right">
+    		<div class="btn-group">
                 <button type="button" class="btn btn-default"><img src="assets/images/salud.png" alt="" width="30px"><span style="">&nbsp;</span><span class="label label-danger">4</span></button>
                 <button type="button" class="btn btn-default"><img src="assets/images/bomberil.png" alt="" width="30px"><span style="">&nbsp;</span><span class="label label-warning">10</span></button>
                 <button type="button" class="btn btn-default"><img src="assets/images/policial.png" alt="" width="30px"><span style="">&nbsp;</span><span class="label label-primary">4</span></button>
                 <button type="button" class="btn btn-default"><img src="assets/images/transito.png" alt="" width="30px"><span style="">&nbsp;</span><span class="label label-success">10</span></button>
-            </div>  
-        </div>
+            </div>	
+    	</div>
     </div>
     <div class="mailbox row">
 
@@ -26,12 +26,12 @@
 
                 <div class="box-body">
                     <div class="row">
-                        <div class="col-md-2 col-sm-3">
+                        <div class="col-md-3 col-sm-4">
                             <!-- BOXES are complex enough to move the .box-header around.
                                 This is an example of having the box header within the box body -->
                             <div class="box-header">
                                 <i class="fa fa-inbox"></i>
-                               <h5 class="title">&nbsp;Bandeja de Incidentes</h5>
+                                <h5 class="box-title">Bandeja de Incidentes</h5>
                             </div>
                             <!-- Navigation - folders-->
 
@@ -45,7 +45,7 @@
                         </div>
                         <!-- /.col (LEFT) -->
                         <div ng-show="tab === 1">
-                        <div class="col-md-10 col-sm-9">
+                        <div class="col-md-9 col-sm-8">
                             <div class="row pad">
                                 <div class="col-sm-6 search-form">
                                     <form action="#" class="text-right">
@@ -61,36 +61,36 @@
                             <!-- /.row -->
                             <div class="table-responsive">
                                 <!-- THE MESSAGES -->
-                                    <table class="table table-mailbox">
-                                        <tr>
-                                            <th class="text-center">Nro. Incidente</th>
-                                            <th class="text-center">Agencia Asociada</th>
-                                            <th class="text-center">Tipo de Incidente</th>
-                                            <th class="">Dirección de Incidente</th>
-                                            <th class="text-center">Fecha y Hora</th>
-                                        </tr>
-                                        <tr class="unread" ng-repeat="incident in bandeja.incidents">
-                                            <td class="name text-center">{{incident.id}}</td>
-                                            <td class="name text-center"><img src="assets/images/{{incident.agency}}.png" alt="" width="30px"></td>
-                                            <td class="name text-center"><table><tr><td><span class="label {{incident.priorida}}">Prioridad</span></td><td>{{incident.type}}</td></tr></table></td>
-                                            <td class="subject"><a href="#">{{incident.address}}</a></td>
-                                            <td class="time text-center">{{incident.date}}</td>
-                                        </tr>
-                                        <tr class="" ng-repeat="incident in bandeja.incidents">
-                                            <td class="name text-center">{{incident.id + 4}}</td>
-                                            <td class="name text-center"><img src="assets/images/{{incident.agency}}.png" alt="" width="30px"></td>
-                                            <td class="name text-center"><table><tr><td><span class="label {{incident.priorida}}">Prioridad</span></td><td>{{incident.type}}</td></tr></table></td>
-                                            <td class="subject"><a href="#">{{incident.address}}</a></td>
-                                            <td class="time text-center">{{incident.date}}</td>
-                                        </tr>
-                                    </table>
+	                             	<table class="table table-mailbox">
+	                                	<tr>
+	            							<th class="text-center">Nro. Incidente</th>
+	            							<th class="text-center">Agencia Asociada</th>
+	            							<th class="text-center">Tipo de Incidente</th>
+	            							<th class="">Dirección de Incidente</th>
+	            							<th class="text-center">Fecha y Hora</th>
+	            						</tr>
+	                                    <tr class="unread" ng-repeat="incident in bandeja.incidents">
+	                                        <td class="name text-center">{{incident.id}}</td>
+	                                        <td class="name text-center"><img src="assets/images/{{incident.agency}}.png" alt="" width="30px"></td>
+	                                        <td class="name text-center"><span class="label {{incident.priorida}}">{{incident.type}}</span></td>
+	                                        <td class="subject"><a href="#">{{incident.address}}</a></td>
+	                                        <td class="time text-center">{{incident.date}}</td>
+	                                    </tr>
+	                                    <tr class="" ng-repeat="incident in bandeja.incidents">
+	                                        <td class="name text-center">{{incident.id + 4}}</td>
+	                                        <td class="name text-center"><img src="assets/images/{{incident.agency}}.png" alt="" width="30px"></td>
+	                                        <td class="name text-center"><span class="label {{incident.priorida}}">{{incident.type}}</span></td>
+	                                        <td class="subject"><a href="#">{{incident.address}}</a></td>
+	                                        <td class="time text-center">{{incident.date}}</td>
+	                                    </tr>
+	                                </table>
                                 </div>
                             </div>
                             <!-- /.table-responsive -->
                         </div>
 
                         <div ng-show="tab === 2">
-                        <div class="col-md-10 col-sm-8">
+                        <div class="col-md-9 col-sm-8">
                             <div class="row pad">
                                 <div class="col-sm-6 search-form">
                                     <form action="#" class="text-right">
@@ -106,28 +106,29 @@
                             <!-- /.row -->
                             <div class="table-responsive">
                                 <!-- THE MESSAGES -->
-                                    <table class="table table-mailbox">
-                                        <tr>
-                                            <th class="text-center">Nro. Incidente</th>
-                                            <th class="text-center">Agencia Asociada</th>
-                                            <th class="text-center">Tipo de Incidente</th>
-                                            <th class="">Dirección de Incidente</th>
-                                            <th class="text-center">Fecha y Hora</th>
-                                        </tr>
-                                        <tr class="unread" ng-repeat="incident in bandeja.incidents">
-                                            <td class="name text-center">{{incident.id}}</td>
-                                            <td class="name text-center"><img src="assets/images/{{incident.agency}}.png" alt="" width="30px"></td>
-                                            <td class="name text-center"><table><tr><td><span class="label {{incident.priorida}}">Prioridad</span></td><td>{{incident.type}}</td></tr></table></td>                                         <td class="subject"><a href="#">{{incident.address}}</a></td>
-                                            <td class="time text-center">{{incident.date}}</td>
-                                        </tr>
-                                        <tr class="" ng-repeat="incident in bandeja.incidents">
-                                            <td class="name text-center">{{incident.id + 4}}</td>
-                                            <td class="name text-center"><img src="assets/images/{{incident.agency}}.png" alt="" width="30px"></td>
-                                            <td class="name text-center"><table><tr><td><span class="label {{incident.priorida}}">Prioridad</span></td><td>{{incident.type}}</td></tr></table></td>
-                                            <td class="subject"><a href="#">{{incident.address}}</a></td>
-                                            <td class="time text-center">{{incident.date}}</td>
-                                        </tr>
-                                    </table>
+	                                <table class="table table-mailbox">
+	                                	<tr>
+	            							<th class="text-center">Nro. Incidente</th>
+	            							<th class="text-center">Agencia Asociada</th>
+	            							<th class="text-center">Tipo de Incidente</th>
+	            							<th class="">Dirección de Incidente</th>
+	            							<th class="text-center">Fecha y Hora</th>
+	            						</tr>
+	                                    <tr class="unread" ng-repeat="incident in bandeja.incidents">
+	                                        <td class="name text-center">{{incident.id}}</td>
+	                                        <td class="name text-center"><img src="assets/images/{{incident.agency}}.png" alt="" width="30px"></td>
+	                                        <td class="name text-center"><span class="label {{incident.priorida}}">{{incident.type}}</span></td>
+	                                        <td class="subject"><a href="#">{{incident.address}}</a></td>
+	                                        <td class="time text-center">{{incident.date}}</td>
+	                                    </tr>
+	                                    <tr class="" ng-repeat="incident in bandeja.incidents">
+	                                        <td class="name text-center">{{incident.id + 4}}</td>
+	                                        <td class="name text-center"><img src="assets/images/{{incident.agency}}.png" alt="" width="30px"></td>
+	                                        <td class="name text-center"><span class="label {{incident.priorida}}">{{incident.type}}</span></td>
+	                                        <td class="subject"><a href="#">{{incident.address}}</a></td>
+	                                        <td class="time text-center">{{incident.date}}</td>
+	                                    </tr>
+	                                </table>
                                 </div>
                             </div>
                             <!-- /.table-responsive -->

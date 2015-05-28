@@ -5,7 +5,7 @@ angular.module('fenixApp')
 
         $scope.tab         = 1;
         $scope.tabs        = 1;
-        $scope.show        = 1;
+        $scope.show = 1;
 
         $scope.selectTab = function(tab){
             this.tab = tab;
