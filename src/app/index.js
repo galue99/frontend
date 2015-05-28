@@ -31,7 +31,7 @@ angular.module('fenixApp', ['ngAnimate', 'ngCookies', 'ngTouch', 'ngSanitize', '
       .state('agencia2', {
         url: '/agencia2',
         templateUrl: 'app/views/agencia/agencia2.html',
-        controller: 'Agencia1Ctrl'
+        controller: 'Agencia2Ctrl'
       })
       .state('bandeja', {
         url: '/bandeja',
