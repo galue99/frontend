@@ -1,0 +1,175 @@
+<section class="content">
+    <div class="col-lg-2 col-md-4 col-xs-4">
+        <div class="col-lg-12 col-md-12 col-xs-12 pull-right spacing-buttons" style="padding-top:4px">
+            <a class="btn btn-success btn-lg btn-block" ng-click="" role="button" target="_blank">
+            <i class="glyphicon glyphicon-floppy-saved"></i><br>Notificación
+            </a>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-12 col-md-12 col-xs-12 pull-right spacing-buttons" style="padding-top:4px">
+            <a class="btn btn-danger btn-lg btn-block" ng-click="" role="button" target="_blank">
+            <i class="glyphicon glyphicon-remove"></i><br>Otro
+            </a>
+        </div>
+        <!-- ./col -->
+        <div class="col-lg-12 col-md-12 col-xs-12 pull-right spacing-buttons" style="padding-top:4px">
+            <a class="btn btn-primary btn-lg btn-block" ng-click="" role="button" target="_blank">
+            <i class="glyphicon glyphicon-new-window"></i><br>Otro
+            </a>
+        </div>
+        <!-- ./col -->
+    </div>
+    <div class="col-lg-10 col-md-8 col-xs-8">
+        <div ng-show="true">
+            <fieldset>
+                <legend>Seleccione una Opción</legend>
+                <div class="col-lg-12 col-xs-12">
+                    <div class="col-lg-2 col-md-4 col-xs-12 spacing-buttons" style="padding-top:4px">
+                        <a class="btn btn-success btn-lg btn-block" href="#/ficha" role="button">
+                        <i class="glyphicon glyphicon-earphone"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-10 col-md-8 col-xs-12">
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-xs-12">
+                    <div class="col-lg-2 col-md-4 col-xs-12 spacing-buttons" style="padding-top:4px">
+                        <a class="btn btn-success btn-lg btn-block" href="#/despachador" role="button">
+                        <i class="glyphicon glyphicon-new-window"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-10 col-md-8 col-xs-12">
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+                    </div>
+                </div>
+                <div class="col-lg-12 col-xs-12">
+                    <div class="col-lg-2 col-md-4 col-xs-12 spacing-buttons" style="padding-top:4px">
+                        <a class="btn btn-success btn-lg btn-block" href="#/" role="button">
+                        <i class="glyphicon glyphicon-envelope"></i>
+                        </a>
+                    </div>
+                    <div class="col-lg-10 col-md-8 col-xs-12">
+                        <br>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+                            tempor incididunt ut labore et dolore magna aliqua.
+                        </p>
+                    </div>
+                    <!-- ./col -->
+                </div>
+            </fieldset>
+        </div>
+    </div>
+</section>
+<!--<section class="content">
+    <div class="spacing col-lg-12">
+      <p></p>
+    </div>
+    <div class="col-lg-12 bs-example">
+        <ul class="nav nav-tabs">
+            <li class="active"><a data-toggle="tab" href="#abiertos">Abiertos</a></li>
+            <li><a data-toggle="tab" href="#cerrados">Cerrados</a></li>
+        </ul>
+        <div class="tab-content">
+            <div id="abiertos" class="tab-pane fade in active">
+                <h3>Incidentes Abiertos</h3>
+                <div class="">
+                  <table class="table table-bordered">
+                    <thead>
+                      <tr>
+                        <th align="center">Nro. Incidente</th>
+                        <th align="center">Tipo de Incidente</th>
+                        <th align="center">Dirección de Incidente</th>
+                        <th align="center">Agencia Asociada</th>
+                        <th align="center">Fecha y Hora</th>
+                        <th align="center">Status</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr ng-repeat="ticket in tickets">
+                        <td align="center">{{ticket.linea_receptora}}</td>
+                        <td align="center">{{ticket.tipo_incidente}}</td>
+                        <td align="center">{{ticket.direccion_incidente}}</td>
+                        <td align="center">{{ticket.linea_receptora}}</td>
+                        <td align="center">{{ticket.fecha}}</td>
+                        <td align="center"><span class="badge type-badge"><b>Abierto</b></span></td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>  
+            </div>
+            <div id="cerrados" class="tab-pane fade active">
+                <h3>Incidentes Cerrados</h3>
+                  <p>Vestibulum nec erat eu nulla rhoncus fringilla ut non neque. Vivamus nibh urna, ornare id gravida ut, mollis a magna. Aliquam porttitor condimentum nisi, eu viverra ipsum porta ut. Nam hendrerit bibendum turpis, sed molestie mi fermentum id. Aenean volutpat velit sem. Sed consequat ante in rutrum convallis. Nunc facilisis leo at faucibus adipiscing.</p>
+            </div>
+        </div>
+    </div>{{tab}}
+    </section> -->
+<!-- <footer class="col-lg-12" >
+    <div class="spacing col-lg-12">
+       <ul class="nav nav-tabs">
+          <li ng-class="{ active:tab === 1 }"><a href="" ng-click="selectTab(1)">Abiertos</a></li>
+          <li ng-class="{ active:tab === 2 }"><a href="" ng-click="selectTab(2)">Cerrados</a></li>
+       </ul>
+       <div class="tab-content">
+    
+          <div ng-show="tab === 1" class="col-lg-12">
+             <h3>Incidentes Abiertos</h3>
+             <div class="col-lg-12">
+                <table class="table table-bordered">
+                   <thead>
+                      <tr>
+                         <th align="center">Nro. Incidente</th>
+                         <th align="center">Tipo de Incidente</th>
+                         <th align="center">Dirección de Incidente</th>
+                         <th align="center">Agencia Asociada</th>
+                         <th align="center">Fecha y Hora</th>
+                         <th align="center">Status</th>
+                      </tr>
+                   </thead>
+                   <tbody>
+                      <tr>
+                         <td align="center"></td>
+                         <td align="center"></td>
+                         <td align="center"></td>
+                         <td align="center"></td>
+                         <td align="center"></td>
+                         <td align="center"></td>
+                      </tr>
+                   </tbody>
+                </table>
+             </div>
+          </div>
+    
+          <div ng-show="tab === 2">
+             <h3>Incidentes Cerrados</h3>
+             <div class="col-lg-12">
+                <table class="table table-bordered">
+                   <thead>
+                      <tr>
+                         <th align="center">Nro. Incidente</th>
+                         <th align="center">Tipo de Incidente</th>
+                         <th align="center">Dirección de Incidente</th>
+                         <th align="center">Agencia Asociada</th>
+                         <th align="center">Fecha y Hora</th>
+                         <th align="center">Status</th>
+                      </tr>
+                   </thead>
+                   <tbody>
+                      <tr>
+                         <td align="center"></td>
+                         <td align="center"></td>
+                         <td align="center"></td>
+                         <td align="center"></td>
+                         <td align="center"></td>
+                         <td align="center"></td>
+                      </tr>
+                   </tbody>
+                </table>
+             </div>
+          </div>
+       </div>
+    </div>
+    </footer>-->
