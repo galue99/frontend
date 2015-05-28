@@ -13,7 +13,7 @@ var urlencodedParser = app.use(bodyParser.urlencoded({extended: true}));
 
 var tickets = [];
 
-http.listen(8080, function () {
+http.listen(3000, function () {
     'use strict';
     console.log('Connect to port 8080');
 });
