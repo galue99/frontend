@@ -9,6 +9,7 @@
         <!-- build:css({.tmp/serve,src}) styles/vendor.css -->
         <link rel="stylesheet" href="assets/css/bootstrap.min.css">
         <!-- bower:css -->
+        <!-- run `gulp inject` to automatically populate bower styles dependencies -->
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:css({.tmp/serve,src}) styles/app.css -->
@@ -27,13 +28,9 @@
         <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
         <header class="header">
-
-        <!--    <a href="index.html" class="logo">
+            <a href="index.html" class="logo">
                 <!-- Add the class icon to your logo image or logo icon to add the margining -->
-            <!--     <span class="sr-only">Toggle navigation</span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
-                <span class="icon-bar"></span>
+                Fenix
             </a>
             <!-- Header Navbar: style can be found in header.less -->
             <nav class="navbar navbar-static-top" role="navigation">
@@ -137,7 +134,7 @@
                             </a>
                             <ul class="treeview-menu">
                                 <li><a href="#/login"><i class="fa fa-angle-double-right"></i> Login</a></li>
-                                <li><a href="#/screenlock"><i class="fa fa-angle-double-right"></i> Screenlock</a></li>
+                                <li><a href="#/screenlock"><i class="fa fa-angle-double-right"></i> Screen Lock</a></li>
                                 <li><a href="#/404"><i class="fa fa-angle-double-right"></i> 404</a></li>
                                 <li><a href="#/500"><i class="fa fa-angle-double-right"></i> 500</a></li>
                             </ul>
@@ -175,42 +172,34 @@
                 </table>
             </div>
         </div>
-        <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
-        <script>
-            (function(b,o,i,l,e,r){b.GoogleAnalyticsObject=l;b[l]||(b[l]=
-            function(){(b[l].q=b[l].q||[]).push(arguments)});b[l].l=+new Date;
-            e=o.createElement(i);r=o.getElementsByTagName(i)[0];
-            e.src='//www.google-analytics.com/analytics.js';
-            r.parentNode.insertBefore(e,r)}(window,document,'script','ga'));
-            ga('create','UA-XXXXX-X');ga('send','pageview');
-        </script>
+
+        <script src="assets/js/jquery/dist/jquery.js"></script>
+        <script src="assets/js/angular/angular.js"></script>
+        <script src="assets/js/angular-animate/angular-animate.js"></script>
+        <script src="assets/js/angular-cookies/angular-cookies.js"></script>
+        <script src="assets/js/angular-touch/angular-touch.js"></script>
+        <script src="assets/js/angular-sanitize/angular-sanitize.js"></script>
+        <script src="assets/js/angular-resource/angular-resource.js"></script>
+        <script src="assets/js/angular-ui-router/release/angular-ui-router.js"></script>
+        <script src="assets/js/angular-bootstrap/ui-bootstrap-tpls.js"></script>
+        <script src="assets/js/ng-websocket/ng-websocket.js"></script>
+        <script src="assets/js/underscore/underscore.js"></script>
         <!-- build:js(src) scripts/vendor.js -->
         <!-- bower:js -->
-        <script src="assets/jquery/dist/jquery.js"></script>
-        <script src="assets/js/angular/angular.js"></script>
-        <script src="../bower_components/angular-animate/angular-animate.js"></script>
-        <script src="../bower_components/angular-cookies/angular-cookies.js"></script>
-        <script src="../bower_components/angular-touch/angular-touch.js"></script>
-        <script src="../bower_components/angular-sanitize/angular-sanitize.js"></script>
-        <script src="../bower_components/angular-resource/angular-resource.js"></script>
-        <script src="../bower_components/angular-ui-router/release/angular-ui-router.js"></script>
-        <script src="../bower_components/angular-bootstrap/ui-bootstrap-tpls.js"></script>
-        <script src="../bower_components/ng-websocket/ng-websocket.js"></script>
-        <script src="../bower_components/underscore/underscore.js"></script>
-        <script src="../bower_components/angular-mask/dist/ngMask.js"></script>
+        <!-- run `gulp inject` to automatically populate bower script dependencies -->
         <!-- endbower -->
         <!-- endbuild -->
         <!-- build:js({.tmp/serve,.tmp/partials,src}) scripts/app.js -->
-        <!-- inject:js -->
         <script src="app/index.js"></script>
         <script src="app/components/navbar/navbar.controller.js"></script>
         <script src="app/controllers/main.controller.js"></script>
         <script src="app/controllers/ficha.controller.js"></script>
         <script src="app/controllers/despachador.controller.js"></script>
         <script src="app/controllers/bandeja.controller.js"></script>
-        <script src="app/controllers/agencia2.controller.js"></script>
         <script src="app/controllers/agencia1.cotroller.js"></script>
         <script src="app/controllers/agencia.controller.js"></script>
+        <!-- inject:js -->
+        <!-- js files will be automatically insert here -->
         <!-- endinject -->
         <!-- inject:partials -->
         <!-- angular templates will be automatically converted in js and inserted here -->

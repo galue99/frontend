@@ -9,42 +9,44 @@ angular.module('fenixApp')
             return $scope.date;
         };
 
+
+
         $scope.agencia = {
             unidades: [{
                 id: 1,
                 estado: "No Disponible",
                 gps: "Not Active",
                 status: "not-active",
-                alias: "Lorem ipsum dolor",
-                agencia: "Lorem ipsum dolor",
-                sector: "Lorem ipsum dolor",
+                alias: "Lorem ipsum dolor.",
+                agencia: "Lorem ipsum dolor.",
+                sector: "Lorem ipsum dolor.",
                 mision: "Not Active"
             }, {
                 id: 2,
                 estado: "No Disponible",
                 gps: "Not Status",
                 status: "not-status",
-                alias: "Lorem ipsum dolor",
-                agencia: "Lorem ipsum dolor",
-                sector: "Lorem ipsum dolor",
+                alias: "Lorem ipsum dolor.",
+                agencia: "Lorem ipsum dolor.",
+                sector: "Lorem ipsum dolor.",
                 mision: "Not Status"
             }, {
                id: 3,
                 estado: "No Disponible",
                 gps: "Active",
                 status: "active",
-                alias: "Lorem ipsum dolor",
-                agencia: "Lorem ipsum dolor",
-                sector: "Lorem ipsum dolor",
+                alias: "Lorem ipsum dolor.",
+                agencia: "Lorem ipsum dolor.",
+                sector: "Lorem ipsum dolor.",
                 mision: "Active"
             }, {
                 id: 4,
                 estado: "No Disponible",
                 gps: "Not Active",
                 status: "not-active",
-                alias: "Lorem ipsum dolor",
-                agencia: "Lorem ipsum dolor",
-                sector: "Lorem ipsum dolor",
+                alias: "Lorem ipsum dolor.",
+                agencia: "Lorem ipsum dolor.",
+                sector: "Lorem ipsum dolor.",
                 mision: "Not Active"
             }]
         }
